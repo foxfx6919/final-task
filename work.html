@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>作品</title>
+<meta http-equiv="Content-Language" content="English" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript">
+        document.oncontextmenu = function () {
+            alert("明白了齁~!出現警告了!不能複製啦~~! ლ(・´ｪ`・ლ)")
+            return false;
+        }
+        function add() {
+            var c1 = document.getElementById("input1");
+            var c2 = document.getElementById("input2");
+            var c3 = document.getElementById("input3");
+            var cal = document.getElementById("select1");
+            if (cal.options.selectedIndex == 0) c3.value = parseInt(c1.value) + parseInt(c2.value);
+            else if (cal.options.selectedIndex == 1) c3.value = parseInt(c1.value) - parseInt(c2.value);
+            else if (cal.options.selectedIndex == 2) c3.value = parseInt(c1.value) * parseInt(c2.value);
+            else if (cal.options.selectedIndex == 3) c3.value = parseInt(c1.value) / parseInt(c2.value);
+        }
+        function changecolor1() 
+        {
+            var c = document.getElementById("title1");
+            c.style.color = "green";
+            c.style.fontSize = "50px";
+            c.style.fontFamily="Microsoft JhengHei";
+        }
+        function changecolor2() {
+            var c = document.getElementById("title1");
+            c.style.color = "blue";
+            c.style.fontSize = "30px";
+            c.style.fontFamily="DFKai-sb";
+        }
+</script>
+</head>
+<body>
+
+<div id="wrap">
+
+<div id="header">
+<h1>§ ● 作品一覽 ● §</h1><br/><br/>
+<marquee>歡迎蒞臨~~開心參觀~~慢慢欣賞~~!!</marquee>
+</div>
+
+<div class="right"> 
+
+<h2>按右鍵,防盜</h2>
+<p>按下滑鼠右鍵,一切明瞭</p><br/>
+<h2>小小計算機</h2><br/>
+<label>A </label><input id="input1" type="text" value="" style="width:50px;" />
+<select id="select1">
+    <option>+</option>
+    <option>-</option>
+    <option>X</option>
+    <option>/</option>
+</select>
+<label> B </label><input id="input2" type="text" value="" style="width:50px;" />
+<label> = </label><input id="input3" type="text" value="" style="width:50px;" />
+<input type="button" value="計算" onclick="javascript: add();" /><br/><br/>
+<h2>改變字體</h2><br/>
+<h1 id="title1" onclick="javascript:animation();">變變變</h1><br/>
+<input id="input1" onclick="javascript: changecolor1();" type="button" value="變化1">
+<input id="input2" onclick="javascript: changecolor2();" type="button" value="變化2">
+
+</div>
+
+<div class="left"> 
+
+<ul>
+<li><a href="index.html">我的小窩</a></li> 
+<li><a href="media.html">多媒體嵌入</a></li> 
+<li><a href="work.html">作品一覽</a></li> 
+<li><a href="message.html">即時留言板</a></li>
+<li><a href="list.html">社團申請表</a></li> 
+</ul>
+
+</div>
+
+<div style="clear: both;"> </div>
+
+<div id="footer">
+<hr/>
+製作者:<a>資工一110410520-鄭羽婷</a> , 製作日期:2016.6.8 , 謝謝觀看
+</div>
+
+</div>
+
+</body>
+</html>

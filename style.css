@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+font-size: 12px;
+line-height: 20px;
+color: #222;
+}
+
+a {
+text-decoration: none;
+color: #99AECD;
+}
+a:hover {
+text-decoration: underline;
+color: #4F5D7F;
+}
+
+#wrap {
+background:  url(images/12084677.jpg) ;
+margin: 0 auto;
+width: 800px;
+}
+
+#header {
+height: 120px
+}
+#header h1 { 
+font-size: 50px;
+letter-spacing: 2px;
+padding: 27px 0 0 0;
+color: #99AECD;
+}
+#header marquee {
+    font-size: 18px;
+    color: #4F5D7F;
+}
+.right {
+float: right;
+width: 600px;
+text-align: justify;
+padding-top: 5px;
+}
+.right h2 {
+color: #99AECD;
+font-size: 18px;
+font-weight: 100;
+padding: 15px 0 7px 0;
+}
+.right h2 a {
+text-decoration: none;
+}
+.right h3 {
+color: 	#B94FFF;
+font-size: 15px;
+}
+.right table {
+text-align: center;
+}
+.right textarea{
+	width: 171px;
+}
+.left {
+float: left;
+width: 200px;
+padding-top: 10px;
+font-size: 11px;
+}
+
+.left ul {
+padding: 10px 0 15px 0;
+list-style-type: none;
+}
+.left ul li a {
+text-decoration: none;
+font-weight: 600;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+#footer {
+text-align: center;
+font-size: 12px;
+color: #000;
+margin-top: 40px;
+height: 90px;
+padding-top: 30px;
+}
+#footer a { color: #000; }
+#footer a:hover { color: #aaa; }
